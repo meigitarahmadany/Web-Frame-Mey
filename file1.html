@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kost Kece</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        /* Tombol kembali ke atas */
+        .back-to-top {
+            display: none; /* Disembunyikan secara default */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #c1ffe5;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .back-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body style="background-color: #97f1eb;">
+    <div style="background-color: #A9CCE3;" class="header">
+        <p><img src="p.jpg" width="200" height="110" align="left"></p>
+        <h1>Elektro Kost</h1>
+        <p>Kost Aesthetic Untuk Jiwa Yang Kreatif</p>
+    </div>
+    <div class="container">
+        <div style="background-color: #48FFF7;" class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Ini adalah bagian sidebar dari frame.</p>
+            <ul>
+                <li><a href="#1">Kamar Reguler</a></li>
+                <li><a href="#2">Kamar Premium</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <br><a href="home.html">Beranda</a> / Kamar
+            <h2>Kamar</h2>
+            <p>Di elektro kost kami menyediakan dua tipe kamar dengan ukuran, fasilitas, dan nuansa yang berbeda. Anda dapat memilih
+                tipe kamar yang anda inginkan sesuai kebutuhan yang anda ingin penuhi. Fasilitas elektro kost tidak perlu diragukan lagi.
+                Karena menurut kami ada harga, ada juga kualitasnya. Berikut adalah tipe kamar kost yang tersedia..
+            </p>
+
+            <p><img src="a.jpg" width="640" height="427"></p>
+            <br>
+            <br>
+            <br>
+
+            <a name="1">
+                <h2>Kamar Reguler</h2>
+            </a>
+            <p>Di elektro kost terdapat kamar reguler yang tersedia fasilitas yang lumayan bagus untuk kelas dan harga.
+                Kamar kost ini sangat worth it bagi kalian yang mencari harga kost yang murah tetapi dengan kualitas yang terbilang baik.
+            </p>
+
+            <br><table border="1" cellpadding="8">
+                <tr>
+                    <td rowspan="2">Ukuran Kamar</td>
+                </tr>
+                <tr>
+                    <td>2 x 3 Meter</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Fasilitas</td>
+                </tr>
+                <tr>
+                    <td>Tempat tidur, Meja belajar, dan Lemari baju. (Kamar Mandi Luar)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Harga</td>
+                </tr>
+                <tr>
+                    <td>Rp 750.000</td>
+                </tr>
+                </table>
+
+                <br>
+                <br>
+                <br>
+            <p>Gambar Kamar Kost</p>
+            <p><img src="kos1.jpg" width="560" height="540"></p>
+            <p><img src="kos2.jpg" width="560" height="620"></p>
+            <p><img src="kos3.jpg" width="560" height="560"></p>
+            
+            <br>
+            <br>
+            <br>
+            <a name="2">
+                <h2>Kamar Premium</h2>
+            </a>
+            <p>Di elektro kost terdapat kamar premium yang tersedia fasilitas yang sangat bagus untuk kelas dan harga.
+                Kamar kost ini sangat worth it bagi kalian yang mencari harga kost yang fasilitasnya lengkap dan suasana kamar yang nyaman.
+                Sudah difasilitasi meter listrik.
+            </p>
+
+            <br><table border="1" cellpadding="8">
+                <tr>
+                    <td rowspan="2">Ukuran Kamar</td>
+                </tr>
+                <tr>
+                    <td>4 x 4 Meter</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Fasilitas</td>
+                </tr>
+                <tr>
+                    <td>Tempat tidur, Meja belajar, dan Lemari baju, AC, dan Kamar mandi di dalam</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Harga</td>
+                </tr>
+                <tr>
+                    <td>Rp 1.500.000</td>
+                </tr>
+                </table>
+
+                <br>
+                <br>
+                <br>
+            <p>Gambar Kamar Kost</p>
+            <p><img src="kos1.jpg" width="560" height="540"></p>
+            <p><img src="kos2.jpg" width="560" height="620"></p>
+            <p><img src="kos3.jpg" width="560" height="560"></p>
+
+        <br><br><br>
+            <p>Made by: Meigita Lestari (2TI5)</p>
+
+             <!-- Tombol Kembali ke Atas -->
+    <button onclick="topFunction()" id="backToTopBtn" class="back-to-top">⬆️</button>
+
+    <script>
+        // Dapatkan tombol
+        var mybutton = document.getElementById("backToTopBtn");
+
+        // Ketika pengguna menggulir ke bawah 20px dari atas dokumen, tampilkan tombol
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Ketika pengguna mengklik tombol, scroll kembali ke atas dokumen
+        function topFunction() {
+            document.body.scrollTop = 0; // Untuk Safari
+            document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+        }
+    </script>
+        </div>
+</body>
+</html>
